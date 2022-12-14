@@ -1,0 +1,54 @@
+.product {
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  &__item {
+    width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    @include tablet {
+      @include calc(2, 30px);
+      margin-bottom: 0px;
+    }
+
+    @include desktop {
+      @include calc(3, 30px);
+    }
+  }
+
+  &__item-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+
+  &__item-meta {
+    flex-grow: 1;
+    border: #eeeeee 1px solid;
+    border-top: none;
+    padding: 20px 24px;
+  }
+
+  &__item-title {
+    margin-bottom: 4px;
+    color: var(--title-text-color);
+    @include font(null, 18px, 2, 0.06em);
+  }
+
+  &__item-text {
+    color: var(--text-color);
+    @include font(null, 16px, 1.87, 0.03em);
+  }
+}

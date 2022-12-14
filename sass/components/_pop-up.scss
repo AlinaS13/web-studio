@@ -1,0 +1,27 @@
+.pop-up {
+  position: relative;
+  overflow: hidden;
+  &__meta {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 63px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     @include font(null, 18px, 1.56, 0.03em);
+    color: var(--accent-whit-color);
+    background-color: rgba(33, 150, 243, 0.9);
+
+    transition-duration: 250ms;
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(100%);
+    .product__item-link:hover &,
+    .product__item-link:focus & {
+      transform: translateY(0);
+    }
+  }
+}

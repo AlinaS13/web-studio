@@ -1,0 +1,27 @@
+.logo {
+  font-family: Raleway;
+  font-weight: var(--main-bold-weight);
+  @include font(null, 24px, 1.16, 0.03em);
+  color: var(--brend-color);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  @include desktop {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    @include font(null, 26px, 1.19, 0.03em);
+  }
+}
+
+.header__logo {
+  color: #000000;
+}
+
+.footer__logo {
+  display: block;
+  padding-top: 0;
+  padding-bottom: 20px;
+  &-alt {
+    color: var(--accent-whit-color);
+  }
+}

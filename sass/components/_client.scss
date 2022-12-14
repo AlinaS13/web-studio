@@ -1,0 +1,38 @@
+.client-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  @include desktop {
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item {
+    width: 100%;
+    @include calc(2, 30px);
+    @include tablet {
+      @include calc(3, 30px);
+    }
+    // width: calc((100% - 140px) / 6);
+  }
+}
+
+.client-list__link {
+  width: auto;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: var(--brend-color);
+    border-color: var(--brend-color);
+  }
+}

@@ -1,0 +1,67 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: 0 auto;
+  background-color: var(--footer-background-color);
+  @include desktop {
+    margin-bottom: 0;
+  }
+  &__container {
+    text-align: center;
+
+    @include tablet {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    @include desktop {
+      text-align: left;
+      flex-wrap: nowrap;
+    }
+  }
+
+  &-info:first-child {
+    @include desktop {
+      margin-right: 70px;
+    }
+  }
+
+  &-address {
+    margin-bottom: 9px;
+    color: var(--accent-whit-color);
+    font-style: normal;
+    @include font(null, null, 1.71, 0.03em);
+    display: block;
+  }
+
+  &-contacts {
+    display: block;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    @include font(null, null, 1.71, 0.03em);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include tablet {
+      &:first-child {
+        margin-top: 8px;
+      }
+    }
+  }
+  &:hover,
+  &:focus {
+    color: var(--brend-color);
+  }
+  &-info {
+    margin-bottom: 60px;
+    @include tablet {
+      &:first-child {
+        margin-right: 165px;
+      }
+    }
+    @include desktop {
+      &:first-child {
+        margin-right: 70px;
+      }
+    }
+  }
+}

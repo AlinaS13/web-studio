@@ -40,16 +40,16 @@
     font-style: normal;
     @include font(null, null, 1.71, 0.03em);
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    @include tablet {
-      &:first-child {
-        margin-top: 8px;
+    &:hover,
+    &:focus {
+      color: var(--brend-color);
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      @include tablet {
+        &:first-child {
+          margin-top: 8px;
+        }
       }
     }
-  }
-  &:hover,
-  &:focus {
-    color: var(--brend-color);
   }
   &-info {
     margin-bottom: 60px;

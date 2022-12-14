@@ -76,16 +76,16 @@
   text-decoration: none;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  @include desktop {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
   &:hover,
   &:focus {
     color: var(--brend-color);
     .contact__icon {
       fill: var(--brend-color);
     }
+  }
+  @include desktop {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 .contact__icon {

@@ -12,14 +12,15 @@
 
     @include tablet {
       @include calc(2, 30px);
-      margin-bottom: 0px;
+      &:not(:last-child) {
+        margin-bottom: 0px;
+      }
     }
 
     @include desktop {
       @include calc(3, 30px);
     }
   }
-
   &__item-link {
     display: flex;
     flex-direction: column;

@@ -419,24 +419,24 @@ body {
   margin-right: auto;
   padding-top: 118px;
   padding-bottom: 118px;
-  background-image: var(--bg-gradient), url(/images/background-mob.jpg);
+  background-image: var(--bg-gradient), url(//images/background-mob.jpg);
   background-size: cover;
   background-position: center;
   background-color: #2f303a;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--bg-gradient), url(/images/background-mob-2x.jpg);
+    background-image: var(--bg-gradient), url(//images/background-mob-2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: var(--bg-gradient), url(/images/background-tab.jpg);
+    background-image: var(--bg-gradient), url(//images/background-tab.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--bg-gradient), url(/images/background-tab-2x.jpg);
+    background-image: var(--bg-gradient), url(//images/background-tab-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -444,12 +444,12 @@ body {
     min-height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: var(--bg-gradient), url(/images/background.jpg);
+    background-image: var(--bg-gradient), url(//images/background.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--bg-gradient), url(/images/background-2x.jpg);
+    background-image: var(--bg-gradient), url(//images/background-2x.jpg);
   }
 }
 .hero__title {

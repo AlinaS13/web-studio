@@ -6,6 +6,7 @@
   --secondary-background-color: #f5f4fa;
   --accent-whit-color: #ffffff;
   --footer-background-color: #2f303a;
+  --bg-gradient: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   --main-bold-weight: 700;
   --main-font: Roboto, sans-serif;
 }
@@ -418,16 +419,37 @@ body {
   margin-right: auto;
   padding-top: 118px;
   padding-bottom: 118px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-image.jpg);
+  background-image: var(--bg-gradient), url(/images/background-mob.jpg);
   background-size: cover;
   background-position: center;
   background-color: #2f303a;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--bg-gradient), url(/images/background-mob-2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: var(--bg-gradient), url(/images/background-tab.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--bg-gradient), url(/images/background-tab-2x.jpg);
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     min-height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: var(--bg-gradient), url(/images/background.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--bg-gradient), url(/images/background-2x.jpg);
   }
 }
 .hero__title {
@@ -727,16 +749,11 @@ body {
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
 .footer-contacts:hover, .footer-contacts:focus {
   color: var(--brend-color);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media screen and (min-width: 768px) {
-  .footer-contacts:hover:first-child, .footer-contacts:focus:first-child {
-    margin-top: 8px;
-  }
 }
 .footer-info {
   margin-bottom: 60px;

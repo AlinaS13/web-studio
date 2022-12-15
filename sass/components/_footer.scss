@@ -39,16 +39,11 @@
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
     @include font(null, null, 1.71, 0.03em);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
     &:hover,
     &:focus {
       color: var(--brend-color);
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      @include tablet {
-        &:first-child {
-          margin-top: 8px;
-        }
-      }
     }
   }
   &-info {

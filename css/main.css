@@ -365,10 +365,14 @@ body {
   font-weight: 500;
   font-size: 34px;
   line-height: 1.17;
-  letter-spacing: 0.02em;
   color: var(--brend-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .mobile-contact__tel {
+    letter-spacing: 0.02em;
+  }
 }
 .mobile-contact__mail {
   font-weight: 500;
@@ -386,6 +390,10 @@ body {
   position: relative;
 }
 
+.mobile-soc__item {
+  padding-left: 10px;
+  padding-top: 10px;
+}
 .mobile-soc__item:not(:last-child) {
   margin-right: 10px;
 }
@@ -398,8 +406,10 @@ body {
   background-color: rgba(33, 33, 33, 0.2);
   margin-left: 10px;
 }
-.mobile-soc__item:not(:first-child) {
-  padding-left: 10px;
+@media screen and (min-width: 480px) {
+  .mobile-soc__item:not(:first-child) {
+    padding-left: 10px;
+  }
 }
 
 .mobile-soc__link {

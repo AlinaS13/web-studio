@@ -177,10 +177,13 @@
     margin-bottom: 64px;
   }
   &__tel {
-    @include font(500, 34px, 1.17, 0.02em);
+    @include font(500, 34px, 1.17, null);
     color: var(--brend-color);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include mobile {
+      letter-spacing: 0.02em;
+    }
   }
   &__mail {
     @include font(500, 24px, 1.16, 0.02em);
@@ -210,8 +213,12 @@
     }
   }
 
-  &:not(:first-child) {
-    padding-left: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  @include mobile {
+    &:not(:first-child) {
+      padding-left: 10px;
+    }
   }
 }
 

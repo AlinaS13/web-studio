@@ -1,12 +1,16 @@
 :root {
-  --brend-color: #2196f3;
+  --brend-color: #2f8db8;
   --text-color: #757575;
   --title-text-color: #212121;
   --primery-background-color: #ffffff;
   --secondary-background-color: #f5f4fa;
   --accent-whit-color: #ffffff;
   --footer-background-color: #2f303a;
-  --bg-gradient: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  --bg-gradient: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  );
   --main-bold-weight: 700;
   --main-font: Roboto, sans-serif;
 }
@@ -944,12 +948,6 @@ body {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.modal-text:-ms-input-placeholder {
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
 .modal-text::placeholder {
   font-size: 14px;
   line-height: 1.14;
@@ -958,11 +956,6 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .modal-text::-moz-placeholder {
-    font-size: 12px;
-    line-height: 1.14;
-    letter-spacing: 0.01em;
-  }
-  .modal-text:-ms-input-placeholder {
     font-size: 12px;
     line-height: 1.14;
     letter-spacing: 0.01em;
